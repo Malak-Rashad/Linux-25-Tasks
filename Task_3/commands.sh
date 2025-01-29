@@ -15,9 +15,9 @@ echo "Hello Git :)" > hello.txt
 #the object ID for the content of hello.txt
 git hash-object -w hello.txt
 #stage the file
-git update-index --add --cacheinfo 100644 9645afea43bccdfab1782b1c81>
+git update-index --add --cacheinfo 100644 9645afea43bccdfab1782b1c817fa5947a2c0b69 hello.txt
 git ls-files # to check if the file staged
 git write-tree #to take picture
-git commit-tree 0e6c0be28b6375cb807a96633ea72c0ce909d1fa -m "greates>
+git commit-tree 0e6c0be28b6375cb807a96633ea72c0ce909d1fa -m "greatest commit ever"  # to commit tree
 #tag the commit
 git tag V1 d928d906e6f42b137c7257a5f27c0b429ff01344
